@@ -182,7 +182,10 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 - Sử dụng hàm này
 	def str_xor(s1, s2): 
     return "".join([chr(ord(c1) ^ ord(c2)) for (c1,c2) in zip(s1,s2)])
-![Smalle2](./sources/Smalle2.gif)
+    
+![Smalle2](./sources/smalle2.gif)
+
+
 - Mà em nộp thì nó bảo sai, em xoá hết chữ z thì nó đúng.
    
         Flag: HCMUS-CTF{hello_from_the_other_side}
@@ -373,7 +376,6 @@ Add referrer to the package.
 	Flag: HCMUS-CTF{You_have_to_learn_basic_stack_based_buffer_overflow}
 
 ### Z3
-### Z3
  
 - Đầu tiên lấy Pesudo Code từ trong Ghidra và sửa lại (thay thế các flag[0-35] lần lượt thành x0-x35)
 
@@ -400,7 +402,6 @@ Sau đó code python để tự động in ra flag
 ![z34](./sources/z34.gif)
 
 
-*Flag:* **HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}**
 	Flag: HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}
 
 
