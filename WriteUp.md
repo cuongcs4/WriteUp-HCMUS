@@ -62,11 +62,12 @@
 - Đầu tiên ghi gặp 1 file ảnh, thường thì sẽ thử unzip file để coi có file ngầm nào bên trong không.
 - Vô tình ta unzip đc 1 thư mục gồm 1 file pdf và 1 file rtf. Thử mở file PDF thì thấy lỗi
 
-![Insideme](./sources/Insideme.gif)
+![Insideme](./sources/Insideme.jpg)
+
 
 - Có vẻ đây là 1 file jpg, thử đổi tên file mở lên ta được
 
-![Insideme1](./sources/Insideme1.gif}
+![Insideme1](./sources/Insideme1.gif)
 
 
 *Flag:* **HCMUS-CTF{1t_is_a_s1mpl3_BinWalk}**
@@ -385,6 +386,31 @@ Add referrer to the package.
 *Flag:* **HCMUS-CTF{d0_y0u_kn0w_ARc_fourrrrrrrrrrrr}**
 
 	
-
+### Z3
  
+- Đầu tiên lấy Pesudo Code từ trong Ghidra và sửa lại (thay thế các flag[0-35] lần lượt thành x0-x35)
 
+![Z3](./sources/z3.gif)
+
+
+Sử dụng tool z3 giải được x0-35
+
+![Z31](./sources/z31.gif)
+
+
+Sử dụng code in kết quả vào file
+
+![Z32](./sources/z32.gif)
+
+
+Chỉnh tay bằng công cụ find & replace
+
+![z33](./sources/z33.gif)
+
+
+Sau đó code python để tự động in ra flag
+
+![z34](./sources/z34.gif)
+
+
+*Flag:* **HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}**
