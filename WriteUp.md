@@ -1,4 +1,4 @@
-# HCMUS-CTF WriteUp
+# HCMUS-CTF WriteUp - Ei5EqD
 
 ## FORENSICS
 ### Liberate:
@@ -84,7 +84,7 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 - Ra pass của file rar là FITPASS
 - Giải nén mở file flag.txt
 
-     	Flag: HCMUS-CTF{social_distancing_for_this_pandamic}
+        Flag: HCMUS-CTF{social_distancing_for_this_pandamic}
 
 ### Actually At least	
 - Sử dụng tool  https://georgeom.net/StegOnline/image
@@ -111,18 +111,18 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 - Enter password hcmus-ctf
 - Searching the flag on that computer
 
-   	Flag: HCMUS-CTF{just_try_to_teach_you_qemu}
+      Flag: HCMUS-CTF{just_try_to_teach_you_qemu}
 
 ## CRYPTOGRAPHY
 ### Decoder
 - Giải bằng base64 xong nó hiện ra base64/2 tức là base32 giải 1 lần nữa là được
 
-   	Flag: HCMUS-CTF{jUst_SimplE_Decoder}
+      Flag: HCMUS-CTF{jUst_SimplE_Decoder}
 
 ### Dot and Underscore:
 - Xài morse là ra
 
-   	Flag: HCMUS-CTF{ITSGOODTOLEARNMORSECODE}
+      Flag: HCMUS-CTF{ITSGOODTOLEARNMORSECODE}
 
 ### Sub
 - Đọc file sub ta thấy có dòng BGW_LIGWSR_STAKF_A_ZOM_IOLMGKB_GY_YOM nghi vấn là nội dung flag
@@ -178,7 +178,7 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 ![Smalle2](./sources/Smalle2.gif)
 - Mà em nộp thì nó bảo sai, em xoá hết chữ z thì nó đúng.
    
-  	Flag: HCMUS-CTF{hello_from_the_other_side}
+        Flag: HCMUS-CTF{hello_from_the_other_side}
 	
 ### The Ripper
 - Sử dụng john tools
@@ -188,7 +188,7 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
 - Xong nc với server là ra
 
-   	Flag: HCMUS-CTF{Use_John_the_ripper_to_crack_password_is_fun!!!HAHAHA}
+        Flag: HCMUS-CTF{Use_John_the_ripper_to_crack_password_is_fun!!!HAHAHA}
 
 ## REVERSE ENGINEERING
 ### Factorization Revenge
@@ -197,12 +197,12 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 ![FactorizationRevenge](./sources/FactorizationRevenge.gif)
 
 
-	Flag: HCMUS-CTF{haaaaah_what_do_you_really_want_from_meeeeeee}
+        Flag: HCMUS-CTF{haaaaah_what_do_you_really_want_from_meeeeeee}
 
 ### PatientRevenge
 - Autoclick
 
-  	Flag: HCMUS-CTF{I_hope_u_dont_click_it_by_hand}
+        Flag: HCMUS-CTF{I_hope_u_dont_click_it_by_hand}
 
 ### PatientRevengeRevenge
 
