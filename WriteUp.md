@@ -228,7 +228,7 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 	Flag: HCMUS-CTF{St4cK_Str1ng_G00D_old_techn1qu3}
 
 ### Patient
-	Xài auto click
+- Xài auto click
 
 	Flag: HCMUS-CTF{W0W_y0u_are_p4tient}
 
