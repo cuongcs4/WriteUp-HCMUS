@@ -190,6 +190,13 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 *Flag:* **HCMUS-CTF{Use_John_the_ripper_to_crack_password_is_fun!!!HAHAHA}**
 
 ### Factorization
+- Sử dụng script sau
+
+![Factori](./sources/Factori.GIF)
+
+![Factori1](./sources/Factori1.GIF)
+
+
 
 *Flag:* **HCMUS-CTF{smaLL_NumbeR}**
 
