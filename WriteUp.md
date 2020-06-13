@@ -9,36 +9,45 @@
 
 ### DISCORD:
 ![Discord1](./sources/Discord1.gif)
+
 - Xài tool convert Dec -> ASCII
+
 ![Discord2](./sources/Discord2.gif)
+
 
 *Flag:* **HCMUS-CTF{YoU_kn<>w_discorD_@nd_U_Kn0w_ASCII}**
 
 ### LOGO:
 - Flag ở trong Logo
+
 ![Logo](./sources/Logo.gif)
 
 *Flag:* **HCMUS-CTF{this_is_a_function_not_a_bug_at_all}**
 
 ### Liberate:
 - Exiftool xong có dòng cmt và description ascii85 ở trên.
+
 ![Liberate](./sources/Liberate.gif)
 
 *Flag:* **HCMUS-CTF{uSed_ASCII85_encoder}**
 
 ### Workers' Day
 - Dùng Steghide
+
 ![WorkersDay](./sources/Workersday.gif)
 
 *Flag:* **HCMUS-CTF{simply_use_steghide_to_hiding_something}**
 
 ### Atleast
 - Dùng tool zsteg
+
 ![Atleast](./sources/Atleast.gif)
 *Flag:* **HCMUS-CTF{there_is_somthing_I_wanna_hide}**
 
 ### Galaxy
+
 - Sử dụng audacity xong xài spectrum
+
 ![Galaxy](./sources/Galaxy.gif)	 
 
 *Flag:* **HCMUS-CTF{sound_likes_Outer_Space}**
@@ -51,6 +60,7 @@
 - Dùng Ghex để xem file, thấy file có header PNG nên thêm đuôi mở rộng PNG vào cuối tên file. Nhưng file vẫn bị lỗi, kiểu tra lại header lần nữa chỉnh sửa 0A -> 1A và build lại file mới
 
 ![Unknown](./sources/Unknow.gif)
+
 - Ta được file dưới đây:
 
 ![Unknown2](./sources/Unknow2.gif)
@@ -58,6 +68,7 @@
 *Flag:* **HCMUS-CTF{l0l_CMU_da_b3s}**
 
 ### Docker bae
+
 ![Docker](./sources/Docker.gif)
 
 - Pull docker image: sudo docker pull pakkunady/docker-babe
@@ -81,8 +92,11 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 ### Actually At least	
 - Sử dụng tool  https://georgeom.net/StegOnline/image
 - Chọn extract data và tick như hình. Bài này giải được khá vô tình ( lúc sau đọc lại đề mới thấy có chữ RED )
+
 ![Atleast2](./sources/Atleast2.gif)
+
 - Ta thu được
+
 ![Atleast21](./sources/Atleast21.gif)
 
 *Flag:* **HCMUS-CTF{You_should_learn_LSB_embeded_system}**
