@@ -148,6 +148,13 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
 
 ### Factorization
+- Sử dụng script sau
+
+![Factori](./sources/Factori.GIF)
+
+![Factori1](./sources/Factori1.GIF)
+
+
 
 	Flag: HCMUS-CTF{smaLL_NumbeR}
 
