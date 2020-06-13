@@ -249,21 +249,41 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
     ●	http://159.65.13.76:1337/
     => the missing directory is :1338/
 - “Google can’t find it” => robots.txt
+
 ![SecretDirectory](./sources/SecretDirectory.gif)
+
+
 - We have some directory
+
 ![SecretDirectory1](./sources/SecretDirectory1.gif)
+
+
 - Go to /flagpassword
+
 ![SecretDirectory2](./sources/SecretDirectory2.gif)
+
+
 - “You must come from /flagflagflagflag” => goto /flagflagflagflag then back to this… but
 - We have some problem 
+
 ![SecretDirectory3](./sources/SecretDirectory3.gif)
+
+
 - Open burpsuite and catch some package from /flagpassword
+
 ![SecretDirectory4](./sources/SecretDirectory4.gif)
+
+
 Add referrer to the package.
 - We get the password to access /flagflagflagflag
+
 ![SecretDirectory5](./sources/SecretDirectory5.gif)
+
+
 - We got the flag
+
 ![SecretDirectory6](./sources/SecretDirectory6.gif)
+ 
  
 *Flag:* **HCMUS-CTF{1t_1zzzz_Crucial_t0_kn0W_Headers_and_R0b0tz}**
 
@@ -278,9 +298,11 @@ Add referrer to the package.
 	
 ![Blindsql1](./sources/Blindsql1.gif)
 	 
+	 
 	./sqlmap.py -u http://159.65.13.76:1340/ --data="username=admin" --dump -D blind-sql -T account 
 	
 ![Blindsql2](./sources/Blindsql2.gif)
+
 
 *Flag:* **HCMUS-CTF{Sh0uld_I_Us3_NoSQL_N3xt_T1m3_0x3f3f3f}**
 
