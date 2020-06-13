@@ -22,12 +22,14 @@
 
 ![Logo](./sources/Logo.gif)
 
+
 *Flag:* **HCMUS-CTF{this_is_a_function_not_a_bug_at_all}**
 
 ### Liberate:
 - Exiftool xong có dòng cmt và description ascii85 ở trên.
 
 ![Liberate](./sources/Liberate.gif)
+
 
 *Flag:* **HCMUS-CTF{uSed_ASCII85_encoder}**
 
@@ -36,12 +38,15 @@
 
 ![WorkersDay](./sources/Workersday.gif)
 
+
 *Flag:* **HCMUS-CTF{simply_use_steghide_to_hiding_something}**
 
 ### Atleast
 - Dùng tool zsteg
 
 ![Atleast](./sources/Atleast.gif)
+
+
 *Flag:* **HCMUS-CTF{there_is_somthing_I_wanna_hide}**
 
 ### Galaxy
@@ -49,6 +54,7 @@
 - Sử dụng audacity xong xài spectrum
 
 ![Galaxy](./sources/Galaxy.gif)	 
+
 
 *Flag:* **HCMUS-CTF{sound_likes_Outer_Space}**
 
@@ -62,6 +68,7 @@
 
 ![Insideme1](./sources/Insideme1.gif}
 
+
 *Flag:* **HCMUS-CTF{1t_is_a_s1mpl3_BinWalk}**
 
 ### Unknow
@@ -69,9 +76,11 @@
 
 ![Unknown](./sources/Unknow.gif)
 
+
 - Ta được file dưới đây:
 
 ![Unknown2](./sources/Unknow2.gif)
+
 
 *Flag:* **HCMUS-CTF{l0l_CMU_da_b3s}**
 
@@ -91,7 +100,11 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 - Mở file .001 bằng 7zip
 - Thấy có cái langue và file rar có password và hình zodiac
 - Search google ra zodiac cipher killer: https://www.dcode.fr/zodiac-killer-cipher
+
+
 ![Crime](./sources/Crime.gif)
+
+
 - Ra pass của file rar là FITPASS
 - Giải nén mở file flag.txt
 
@@ -103,19 +116,25 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
 ![Atleast2](./sources/Atleast2.gif)
 
+
 - Ta thu được
 
 ![Atleast21](./sources/Atleast21.gif)
 
+
 *Flag:* **HCMUS-CTF{You_should_learn_LSB_embeded_system}**
 
 ### Qemu
-1.	DOWNLOAD FILE
-2.	Launch qemu file by:
-qemu-system-x86_64 -hda ubuntu.qcow2 -m 1024
+- DOWNLOAD FILE
+- Launch qemu file by:
+	qemu-system-x86_64 -hda ubuntu.qcow2 -m 1024
+
+
 ![Qemu](./sources/Qemu.gif)
-3.	Enter password hcmus-ctf
-4.	Searching the flag on that computer
+
+
+- Enter password hcmus-ctf
+- Searching the flag on that computer
 
 *Flag:* **HCMUS-CTF{just_try_to_teach_you_qemu}**
 
@@ -132,7 +151,10 @@ qemu-system-x86_64 -hda ubuntu.qcow2 -m 1024
 ### Sub
 - Đọc file sub ta thấy có dòng BGW_LIGWSR_STAKF_A_ZOM_IOLMGKB_GY_YOM nghi vấn là nội dung flag
 - Phân tích ta thấy các kí tự của nội dung gốc đã bị thay thế bằng các kí tự khác. Lần lượt thay các kí tự, sử dụng dấu chấm để đánh dấu kí tự nào chưa bị thay
+
+
 ![sub](./sources/Sub.gif)
+
 	 
 *Flag:* **HCMUS-CTF{YOU_SHOULD_LEARN_A_BIT_HISTORY_OF_FIT}**
 
@@ -160,6 +182,8 @@ qemu-system-x86_64 -hda ubuntu.qcow2 -m 1024
 - Sử dụng john tools
 
 ![Theripper](./sources/Theripper.gif)
+
+
 - Xong nc với server là ra
 
 *Flag:* **HCMUS-CTF{Use_John_the_ripper_to_crack_password_is_fun!!!HAHAHA}**
@@ -173,13 +197,21 @@ qemu-system-x86_64 -hda ubuntu.qcow2 -m 1024
 
 ![VerysecureRSA](./sources/VerysecureRSA.gif)
 
+
 *Flag:* **HCMUS-CTF{c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646}**
 
 ### Smalee
 - Tìm được n và e
+
 ![Smalle](./sources/Smalle.gif)
+
+
 - ./RsaCtftool.py -n  .. --uncipher .. -e 3 –attack hastads
+
+
 ![Smalle1](./sources/Smalle1.gif)
+
+
 - Tìm ra plaintext nhưng đã bị xor với xorkey
 - Sử dụng hàm này
 	def str_xor(s1, s2): 
@@ -191,14 +223,23 @@ qemu-system-x86_64 -hda ubuntu.qcow2 -m 1024
 
 ### baby sql
 - Đăng nhập với username là admin password là ' or '1'='1 mệnh đề luôn đúng
+
+
 ![BabySQL](./sources/BabySQL.gif)
+
+
 *Flag:* **HCMUS-CTF{Sh0uld_N0tz_Conc4ten4te_S+r1ng_SQQLLL}**
 
 ### secret agency
 - Xem page source ta thấy có 1 comment  <!-- secret agent = eevee →
 - Chỉnh sửa agent xong refresh lại website
+
+
 ![Secreagency](./sources/Secreagency.gif)
+
+
 ![Secreagency1](./sources/Secreagency1.gif)
+	
 	
 *Flag:* **HCMUS-CTF{+he_4g3nt_Izzz_eevoolution0123456}**
 
@@ -234,14 +275,17 @@ Add referrer to the package.
 	 
 	./sqlmap.py -u http://159.65.13.76:1340/ --data="username=admin" --table -D blind-sql
 	Tìm dược bảng account
+	
 ![Blindsql1](./sources/Blindsql1.gif)
 	 
 	./sqlmap.py -u http://159.65.13.76:1340/ --data="username=admin" --dump -D blind-sql -T account 
+	
 ![Blindsql2](./sources/Blindsql2.gif)
 
 *Flag:* **HCMUS-CTF{Sh0uld_I_Us3_NoSQL_N3xt_T1m3_0x3f3f3f}**
 
 ### Tell me
+
 ![tellme](./sources/tellme.gif)
 ![tellme1](./sources/tellme1.gif)
 
