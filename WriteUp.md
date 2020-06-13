@@ -194,7 +194,7 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
 ![Factori](./sources/Factori.gif)
 
-![Factori1](./sources/Factori1.gif)
+![Factori1](./sources/Factori1.GIF)
 
 
 
