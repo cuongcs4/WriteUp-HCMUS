@@ -42,7 +42,7 @@
 
 - Có vẻ đây là 1 file jpg, thử đổi tên file mở lên ta được
 
-![Insideme1](./sources/Insideme1.gif}
+![Insideme1](./sources/Insideme1.gif)
 
 
 	Flag: HCMUS-CTF{1t_is_a_s1mpl3_BinWalk}
