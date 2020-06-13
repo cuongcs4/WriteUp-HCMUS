@@ -200,7 +200,6 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
         Flag: HCMUS-CTF{Use_John_the_ripper_to_crack_password_is_fun!!!HAHAHA}
 
-## REVERSE ENGINEERING
 ### Factorization Revenge
 - ./RsaCtftool.py -n .. -c -e –attack fermat	 
 
@@ -209,6 +208,8 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
         Flag: HCMUS-CTF{haaaaah_what_do_you_really_want_from_meeeeeee}
 
+
+## REVERSE ENGINEERING
 ### PatientRevenge
 - Autoclick
 
@@ -241,6 +242,37 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 - Xài auto click
 
         Flag: HCMUS-CTF{W0W_y0u_are_p4tient}
+	
+### Z3
+ 
+- Đầu tiên lấy Pesudo Code từ trong Ghidra và sửa lại (thay thế các flag[0-35] lần lượt thành x0-x35)
+
+![Z3](./sources/z3.gif)
+
+
+- Sử dụng tool z3 giải được x0-35
+
+![Z31](./sources/z31.gif)
+
+
+- Sử dụng code in kết quả vào file
+
+![Z32](./sources/z32.gif)
+
+
+- Chỉnh tay bằng công cụ find & replace
+
+![z33](./sources/z33.gif)
+
+
+- Sau đó code python để tự động in ra flag
+
+![z34](./sources/z34.gif)
+
+
+    Flag: HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}
+
+
 
 
 
@@ -374,35 +406,6 @@ Add referrer to the package.
 
 
 	Flag: HCMUS-CTF{You_have_to_learn_basic_stack_based_buffer_overflow}
-
-### Z3
- 
-- Đầu tiên lấy Pesudo Code từ trong Ghidra và sửa lại (thay thế các flag[0-35] lần lượt thành x0-x35)
-
-![Z3](./sources/z3.gif)
-
-
-- Sử dụng tool z3 giải được x0-35
-
-![Z31](./sources/z31.gif)
-
-
-- Sử dụng code in kết quả vào file
-
-![Z32](./sources/z32.gif)
-
-
-- Chỉnh tay bằng công cụ find & replace
-
-![z33](./sources/z33.gif)
-
-
-- Sau đó code python để tự động in ra flag
-
-![z34](./sources/z34.gif)
-
-
-    Flag: HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}
 
 
 	
