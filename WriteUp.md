@@ -130,13 +130,22 @@ qemu-system-x86_64 -hda ubuntu.qcow2 -m 1024
 
 ### Xor
 - Sử dụng http://xor.pw/# . Do đã biết flag sẽ có phần đầu là HCMUS-CTF. Nên ta xor các kí tự đầu của chuỗi encrypt với phần đầu trên. Kết quả cho thấy key là FIT
+
+
 ![Xor](./sources/Xor.gif)
+
+
 ![Xor2](./sources/Xor2.gif)
+
+
 *Flag:* **HCMUS-CTF{XoR_1s_a_KinD_oF_Crypto}**
 
 ### Factorization Revenge
 - ./RsaCtftool.py -n .. -c -e –attack fermat	 
+
 ![FactorizationRevenge](./sources/FactorizationRevenge.gif)
+
+`
 *Flag:* **HCMUS-CTF{haaaaah_what_do_you_really_want_from_meeeeeee}**
 
 ### The Ripper
