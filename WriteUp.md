@@ -38,7 +38,7 @@
 - Đầu tiên ghi gặp 1 file ảnh, thường thì sẽ thử unzip file để coi có file ngầm nào bên trong không.
 - Vô tình ta unzip đc 1 thư mục gồm 1 file pdf và 1 file rtf. Thử mở file PDF thì thấy lỗi
 
-![Insideme](./sources/Insideme.gif)
+![Insideme](./sources/Insideme.jpg)
 
 - Có vẻ đây là 1 file jpg, thử đổi tên file mở lên ta được
 
