@@ -9,33 +9,47 @@
 
 ### DISCORD:
 ![Discord1](./sources/Discord1.gif)
+
 - Xài tool convert Dec -> ASCII
+
 ![Discord2](./sources/Discord2.gif)
+
+
 *Flag:* **HCMUS-CTF{YoU_kn<>w_discorD_@nd_U_Kn0w_ASCII}**
 
 ### LOGO:
 - Flag ở trong Logo
+
 ![Logo](./sources/Logo.gif)
+
 *Flag:* **HCMUS-CTF{this_is_a_function_not_a_bug_at_all}**
 
 ### Liberate:
 - Exiftool xong có dòng cmt và description ascii85 ở trên.
+
 ![Liberate](./sources/Liberate.gif)
+
 *Flag:* **HCMUS-CTF{uSed_ASCII85_encoder}**
 
 ### Workers' Day
 - Dùng Steghide
+
 ![WorkersDay](./sources/Workersday.gif)
+
 *Flag:* **HCMUS-CTF{simply_use_steghide_to_hiding_something}**
 
 ### Atleast
 - Dùng tool zsteg
+
 ![Atleast](./sources/Atleast.gif)
 *Flag:* **HCMUS-CTF{there_is_somthing_I_wanna_hide}**
 
 ### Galaxy
+
 - Sử dụng audacity xong xài spectrum
+
 ![Galaxy](./sources/Galaxy.gif)	 
+
 *Flag:* **HCMUS-CTF{sound_likes_Outer_Space}**
 
 ### Insideme
@@ -44,13 +58,19 @@
 
 ### Unknow
 - Dùng Ghex để xem file, thấy file có header PNG nên thêm đuôi mở rộng PNG vào cuối tên file. Nhưng file vẫn bị lỗi, kiểu tra lại header lần nữa chỉnh sửa 0A -> 1A và build lại file mới
+
 ![Unknown](./sources/Unknow.gif)
+
 - Ta được file dưới đây:
+
 ![Unknown2](./sources/Unknow2.gif)
+
 *Flag:* **HCMUS-CTF{l0l_CMU_da_b3s}**
 
 ### Docker bae
+
 ![Docker](./sources/Docker.gif)
+
 - Pull docker image: sudo docker pull pakkunady/docker-babe
 - Run docker bash in docker image:
 sudo docker run -it pakkunady/docker-babe:latest /bin/bash
@@ -72,8 +92,11 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 ### Actually At least	
 - Sử dụng tool  https://georgeom.net/StegOnline/image
 - Chọn extract data và tick như hình. Bài này giải được khá vô tình ( lúc sau đọc lại đề mới thấy có chữ RED )
+
 ![Atleast2](./sources/Atleast2.gif)
+
 - Ta thu được
+
 ![Atleast21](./sources/Atleast21.gif)
 
 *Flag:* **HCMUS-CTF{You_should_learn_LSB_embeded_system}**
@@ -107,13 +130,22 @@ qemu-system-x86_64 -hda ubuntu.qcow2 -m 1024
 
 ### Xor
 - Sử dụng http://xor.pw/# . Do đã biết flag sẽ có phần đầu là HCMUS-CTF. Nên ta xor các kí tự đầu của chuỗi encrypt với phần đầu trên. Kết quả cho thấy key là FIT
+
+
 ![Xor](./sources/Xor.gif)
+
+
 ![Xor2](./sources/Xor2.gif)
+
+
 *Flag:* **HCMUS-CTF{XoR_1s_a_KinD_oF_Crypto}**
 
 ### Factorization Revenge
 - ./RsaCtftool.py -n .. -c -e –attack fermat	 
+
 ![FactorizationRevenge](./sources/FactorizationRevenge.gif)
+
+`
 *Flag:* **HCMUS-CTF{haaaaah_what_do_you_really_want_from_meeeeeee}**
 
 ### The Ripper
@@ -214,7 +246,9 @@ Add referrer to the package.
     => Dùng 2 tab terminal kết nối tới server và mở store cùng lúc, ta sẽ được 2 bộ số như nhau. Xác định lại đúng thời điểm xuất ra bộ số đó với lệnh timedatectl set-time hh:mm:ss
 - Sau đó dùng GDB để chạy code tìm ra số thứ 4 trả về sau khi chạy hàm create_customer lần thứ 4
 - Sau đó qua tab kết nối với server nhập kết quả ta được flag
+
 ![Store](./sources/Store.gif)
+
 
 *Flag:* **HCMUS-CTF{N3v3r_Us3_srand_time_0}**
 
@@ -223,14 +257,20 @@ Add referrer to the package.
 - Đọc asm sấp mặt và nhận ra cái hàm strcmp có lỗ hổng
 - Vì hàm strcmp trả về số nguyên nên chỉ cần match giá trị đầu là được
 - Nên mình nc xong nhập H 
+
 ![Secret](./sources/Secret.gif)
+
+
 *Flag:* **HCMUS-CTF{strncmp_is_so_fun}**
 
 ### Flow me
 - Xài pwngdb thì thấy có thể xài overflow được.
 - Xong xài python -c “print ‘A’*16*4*4 + 8*’A’ + ‘\xae\x07\x40\x00’” > file 
 - Xong nc ip port < file
+
 ![Flowme](./sources/Flowme.gif)	 
+
+
 *Flag:* **HCMUS-CTF{You_have_to_learn_basic_stack_based_buffer_overflow}**
 
 ### Stackstring
@@ -239,7 +279,10 @@ Add referrer to the package.
 - Disas main lấy địa chỉ của strcmp
 - b *add ngay đó
 - r sẽ hiện ra
+
 ![stackstring](./sources/stackstring.gif)
+
+
 *Flag:* **HCMUS-CTF{St4cK_Str1ng_G00D_old_techn1qu3}**
 
 ### Patient
@@ -257,9 +300,12 @@ Add referrer to the package.
 *Flag:* **HCMUS-CTF{I_hope_u_dont_click_it_by_hand}**
 
 ### PatientRevengeRevenge
+
 - Lần này thấy file có vẻ đã được thêm code để làm delay thời giữa các lần click
 - Dùng IDA để xem code ta thấy có câu lệnh sleep, chỉnh sửa giá trị truyền vào hàm sleep về 0, rebuild lại file sau đó dùng auto click tương tự 2 bài trước
+
 ![Patientrevrev](./sources/Patientrevrev.gif)
+
 - ARC Four tìm hiểu thêm :))
 
 *Flag:* **HCMUS-CTF{d0_y0u_kn0w_ARc_fourrrrrrrrrrrr}**
