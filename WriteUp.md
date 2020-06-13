@@ -192,7 +192,7 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 ### Factorization
 - Sử dụng script sau
 
-![Factori](./sources/Factori.gif)
+![Factori](./sources/Factori.GIF)
 
 ![Factori1](./sources/Factori1.GIF)
 
