@@ -53,7 +53,15 @@
 *Flag:* **HCMUS-CTF{sound_likes_Outer_Space}**
 
 ### Insideme
-        	
+- Đầu tiên ghi gặp 1 file ảnh, thường thì sẽ thử unzip file để coi có file ngầm nào bên trong không.
+- Vô tình ta unzip đc 1 thư mục gồm 1 file pdf và 1 file rtf. Thử mở file PDF thì thấy lỗi
+
+![Insideme](./sources/Insideme.gif)
+
+- Có vẻ đây là 1 file jpg, thử đổi tên file mở lên ta được
+
+![Insideme1](./sources/Insideme1.jpg}
+
 *Flag:* **HCMUS-CTF{1t_is_a_s1mpl3_BinWalk}**
 
 ### Unknow
