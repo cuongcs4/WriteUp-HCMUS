@@ -70,7 +70,7 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 - Move to root and ls to view all files and we see flag.txt  :))))
 - cat flag.txt and see the flag
  
-  	Flag: HCMUS-CTF{Docker_Is_an_essential_tool_You_have_to_learn_FORRRRSURRREEEE}
+        Flag: HCMUS-CTF{Docker_Is_an_essential_tool_You_have_to_learn_FORRRRSURRREEEE}
 
 ### Crime
 - Mở file .001 bằng 7zip
@@ -235,12 +235,12 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 ![stackstring](./sources/stackstring.gif)
 
 
-	Flag: HCMUS-CTF{St4cK_Str1ng_G00D_old_techn1qu3}
+        Flag: HCMUS-CTF{St4cK_Str1ng_G00D_old_techn1qu3}
 
 ### Patient
 - Xài auto click
 
-	Flag: HCMUS-CTF{W0W_y0u_are_p4tient}
+        Flag: HCMUS-CTF{W0W_y0u_are_p4tient}
 
 
 
@@ -382,27 +382,27 @@ Add referrer to the package.
 ![Z3](./sources/z3.gif)
 
 
-Sử dụng tool z3 giải được x0-35
+- Sử dụng tool z3 giải được x0-35
 
 ![Z31](./sources/z31.gif)
 
 
-Sử dụng code in kết quả vào file
+- Sử dụng code in kết quả vào file
 
 ![Z32](./sources/z32.gif)
 
 
-Chỉnh tay bằng công cụ find & replace
+- Chỉnh tay bằng công cụ find & replace
 
 ![z33](./sources/z33.gif)
 
 
-Sau đó code python để tự động in ra flag
+- Sau đó code python để tự động in ra flag
 
 ![z34](./sources/z34.gif)
 
 
-	Flag: HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}
+    Flag: HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}
 
 
 	
