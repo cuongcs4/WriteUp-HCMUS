@@ -1,5 +1,34 @@
 # HCMUS-CTF WriteUp - Ei5EqD
 
+## MISC
+### KICK OFF:
+
+    Flag: HCMUS-CTF{here_we_go_hcmus_ctf_by_fit@hcmus}
+
+### FANPAGE:
+
+    Flag: HCMUS-CTF{y0ur_v3rY_f1rst_Flagggggggggggggg}
+    
+### DISCORD:
+
+- Xài tool convert Dec -> ASCII
+    
+![Discord1](./sources/Discord1.gif)
+![Discord2](./sources/Discord2.gif)
+
+
+    Flag: HCMUS-CTF{YoU_kn<>w_discorD_@nd_U_Kn0w_ASCII}
+
+
+
+### LOGO:
+- Flag ở trong Logo
+
+![Logo](./sources/Logo.gif)	
+
+
+    Flag: HCMUS-CTF{this_is_a_function_not_a_bug_at_all}
+
 ## FORENSICS
 ### Liberate:
 - Exiftool xong có dòng cmt và description ascii85 ở trên.
