@@ -271,10 +271,25 @@ sudo docker run -it pakkunady/docker-babe:latest /bin/bash
 
 
     Flag: HCMUS-CTF{H4v3_y0u_ev3r_he4rd_0f_z3}
+    
+
+### Lucky Mined
+- Dùng dotPeek để xem source code, thấy có phần tạo mìn
+
+![Luckymine](./sources/Luckymine.GIF)
 
 
+- Tạo 1 đoạn code để tìm vị trí mìn
+
+![Luckymine2](./sources/Luckymine3.GIF)
 
 
+- Chọn theo vị trí tìm được
+
+![Luckymine2](./sources/Luckymine2.GIF)
+
+
+    Flag: HCMUS-CTF{C_SHARPez}
 
 ## WEB EXPLOITATION
 ### baby sql
